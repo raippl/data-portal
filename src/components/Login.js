@@ -10,7 +10,6 @@ class Login extends React.Component {
   render() {
     return (
       <div>
-        <Header appName={this.props.appName} />
         <h2>LOGIN PAGE</h2>
       </div>
     );

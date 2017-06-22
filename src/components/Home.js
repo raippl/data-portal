@@ -10,7 +10,6 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-        <Header appName={this.props.appName} />
         <h2>HOME PAGE</h2>
       </div>
     );
