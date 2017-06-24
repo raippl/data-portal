@@ -14,6 +14,7 @@ import DatasetDetail from './components/Dataset/DatasetDetail';
 import WizardForm from './components/wizard-ingestion/WizardForm'
 import store from './store';
 
+
 const showResults = values =>
   new Promise(resolve => {
     setTimeout(() => {
@@ -22,6 +23,7 @@ const showResults = values =>
       resolve()
     }, 500)
   })
+
 
 ReactDOM.render((
   <Provider store={store}>
@@ -32,14 +34,12 @@ ReactDOM.render((
           <Route exact path="/" component={Home}/>
           <Route path="/login" component={Login}/>
           <Route path="/ingestion" component={IngestionForm}/>
-<<<<<<< HEAD
           <Route path="/ingestion-wizard" component={WizardForm} />
-=======
           <Route path="/dataset" component={Dataset}/>
           <Route path="/datasetdetail/:dataset" component={DatasetDetail}/>
->>>>>>> 55da3588b75a697e415f8b78acee91c9bc8ce00f
         </div>
       </Router>
   </Provider>
 ), document.getElementById('root'));
+
 //registerServiceWorker();

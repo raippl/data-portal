@@ -17,7 +17,7 @@
     "jquery" : "*",
     "avsc" : "*",
     "papaparse" : "*",
-    "redux-form" : "6.8.0"
+    "redux-form" : "6.8.0",
     "superagent": "^3.5.2",
     "superagent-mock": "^3.4.0",
     "superagent-promise": "^1.1.0"

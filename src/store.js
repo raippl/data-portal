@@ -1,5 +1,6 @@
 import { applyMiddleware, createStore, combineReducers } from 'redux';
 import { reducer as formReducer } from 'redux-form'
+import { promiseMiddleware } from './middleware';
 
 const defaultState = {
   appName: 'Data Portal',
@@ -22,6 +23,8 @@ const reducers = {
 }
 
 const middleware = applyMiddleware(promiseMiddleware);
+
+const red = combineReducers(reducers)
 
 const store = createStore(red, applyMiddleware(promiseMiddleware));
 
