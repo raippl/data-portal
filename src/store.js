@@ -2,9 +2,17 @@ import { applyMiddleware, createStore, combineReducers } from 'redux';
 import { reducer as formReducer } from 'redux-form'
 
 const defaultState = {
-  appName: 'Data Portal'
+  appName: 'Data Portal',
+  datasets: null
 };
+
 const reducer = function(state = defaultState, action) {
+  switch (action.type) {
+    case 'LOAD':
+      return { ...state, datasets: action.payload.datasets };
+    case 'UNLOAD':
+      return { ...state, datasets: null };
+  }
   return state;
 };
 
@@ -13,8 +21,8 @@ const reducers = {
   form: formReducer     // <---- Mounted at 'form'
 }
 
-const red = combineReducers(reducers)
+const middleware = applyMiddleware(promiseMiddleware);
 
-const store = createStore(red);
+const store = createStore(red, applyMiddleware(promiseMiddleware));
 
 export default store;
