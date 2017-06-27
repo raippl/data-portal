@@ -12,6 +12,8 @@ import IngestionForm from './ingestion-form/IngestionForm'
 import Dataset from './components/Dataset';
 import DatasetDetail from './components/Dataset/DatasetDetail';
 import WizardForm from './components/wizard-ingestion/WizardForm'
+import MegaHeader from './components/MegaHeader/MegaHeader'
+import MainView from './components/Dataset/MainView'
 import store from './store';
 
 
@@ -29,6 +31,7 @@ ReactDOM.render((
   <Provider store={store}>
     <Router>
         <div>
+          <MegaHeader/>
           <Header/>
           <Menu/>
           <Route exact path="/" component={Home}/>
@@ -37,6 +40,7 @@ ReactDOM.render((
           <Route path="/ingestion-wizard" component={WizardForm} />
           <Route path="/dataset" component={Dataset}/>
           <Route path="/datasetdetail/:dataset" component={DatasetDetail}/>
+          <MainView/>
         </div>
       </Router>
   </Provider>

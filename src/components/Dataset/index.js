@@ -14,7 +14,7 @@ const mapDispatchToProps = dispatch => ({
     dispatch({ type: 'LOAD', payload }),
   unLoad: () =>
     dispatch({ type: 'UNLOAD' }),
-    
+
 });
 
 class Dataset extends React.Component {
@@ -35,20 +35,19 @@ class Dataset extends React.Component {
 
   render() {
     return (
-        <div className="container">
-            <form className="Form Form--spaced u-padding-all-xl u-text-r-xs">
-              <div className='sectionTitle'>
-                <h2>Cerca Dataset</h2>
-              </div>
-              <div className='sectionSubTitle'>
-                <p>Funzione di ricerca dataset nel DAF</p>
-              </div>
-              <input className="form-control" id="searchtext" />
+      <div>
+        <div className="u-background-50 u-textCenter u-padding-r-all u-textCenter u-padding-bottom-xxl">
+            <form className="Form">
+            <div className="Form-field Form-field--withPlaceholder Grid u-background-white u-color-grey-30 u-borderRadius-s" role="search">
+              <input className="Form-input Form-input--ultraLean Grid-cell u-sizeFill u-text-r-s u-color-black u-text-r-xs u-borderRadius-s" required id="searchtext" />
+              <label className="Form-label u-color-grey-50 u-text-r-xxs" htmlFor="cerca">cerca nel sito</label>
               <input type="button" value="Cerca" onClick={() => this.loadComponent()}/>
               <input type="button" value="Pulisci" onClick={() => this.unloadComponent()}/>
-              <MainView/>
-            </form>
-           </div>
+
+             </div>
+           </form>
+       </div>
+       </div>
     );
   }
 }

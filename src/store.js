@@ -24,8 +24,8 @@ const reducers = {
 
 const middleware = applyMiddleware(promiseMiddleware);
 
-const red = combineReducers(reducers)
+//const store = createStore(red, applyMiddleware(promiseMiddleware));
 
-const store = createStore(red, applyMiddleware(promiseMiddleware));
+const store = createStore(reducer, applyMiddleware(promiseMiddleware));
 
 export default store;
