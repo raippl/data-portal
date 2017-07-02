@@ -1,10 +1,10 @@
 const validate = values => {
   const errors = {}
-  if (!values.firstName) {
-    errors.firstName = 'Required'
+  if (!values.title) {
+    errors.title = 'Required'
   }
-  if (!values.lastName) {
-    errors.lastName = 'Required'
+  if (!values.editor) {
+    values.editor = 'Required'
   }
   if (!values.email) {
     errors.email = 'Required'

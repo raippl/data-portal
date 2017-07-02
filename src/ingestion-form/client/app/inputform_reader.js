@@ -17,7 +17,7 @@ function sendPostData(json) {
   var file = document.getElementById('ds_datafile').files[0];
   $.ajax({
     type: "POST",
-    url: "http://localhost:9000/catalog-manager/v1/create/catalog-dataset",
+    url: "http://localhost:9000/catalog-manager/v1/catalog-ds/add",
     dataType: 'json',
     data: JSON.stringify(json),
     contentType: "application/json",
