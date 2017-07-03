@@ -21,11 +21,15 @@ class WizardForm extends Component {
     this.setState({ page: this.state.page - 1 })
   }
 
+  handleSubmit(){
+    console.log('ale')
+  }
+
   render() {
     const { onSubmit } = this.props
     const { page } = this.state
     return (
-      <div>
+      <div >
         {page === 1 && <WizardFormFirstPage onSubmit={this.nextPage} />}
         {page === 2 &&
           <WizardFormSecondPage

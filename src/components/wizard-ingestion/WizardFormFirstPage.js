@@ -20,10 +20,10 @@ const WizardFormFirstPage = props => {
         label="Identifier"
       />
       <Field
-        name="identifier"
+        name="description"
         type="text"
         component={renderField}
-        label="Identifier"
+        label="Description"
       />
       <Field
         name="theme"

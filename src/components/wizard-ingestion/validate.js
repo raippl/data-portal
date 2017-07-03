@@ -4,7 +4,7 @@ const validate = values => {
     errors.title = 'Required'
   }
   if (!values.editor) {
-    values.editor = 'Required'
+    errors.editor = 'Required'
   }
   if (!values.email) {
     errors.email = 'Required'

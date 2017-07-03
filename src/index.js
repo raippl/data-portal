@@ -11,20 +11,12 @@ import Login from './components/Login';
 import IngestionForm from './ingestion-form/IngestionForm'
 import Dataset from './components/Dataset';
 import DatasetDetail from './components/Dataset/DatasetDetail';
-import WizardForm from './components/wizard-ingestion/WizardForm'
+import WizardContainer from './components/wizard-ingestion/WizardContainer'
 import MegaHeader from './components/MegaHeader/MegaHeader'
 import MainView from './components/Dataset/MainView'
 import store from './store';
 
 
-const showResults = values =>
-  new Promise(resolve => {
-    setTimeout(() => {
-      // simulate server latency
-      window.alert(`You submitted:\n\n${JSON.stringify(values, null, 2)}`)
-      resolve()
-    }, 500)
-  })
 
 
 ReactDOM.render((
@@ -37,7 +29,7 @@ ReactDOM.render((
           <Route exact path="/" component={Home}/>
           <Route path="/login" component={Login}/>
           <Route path="/ingestion" component={IngestionForm}/>
-          <Route path="/ingestion-wizard" component={WizardForm} />
+          <Route path="/ingestion-wizard" component={WizardContainer} />
           <Route path="/dataset" component={Dataset}/>
           <Route path="/datasetdetail/:dataset" component={DatasetDetail}/>
           <MainView/>
