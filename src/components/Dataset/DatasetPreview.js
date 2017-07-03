@@ -11,7 +11,6 @@ const DatasetPreview = props => {
       <p>Creator: {dataset.creator_name}</p>
       <p>Issued: {dataset.issued}</p>
       <p><i>{dataset.resources[0].description}</i></p>
-      <Link id="foo" to={linkTo} >Dettaglio...</Link>
     </div>
   );
 }

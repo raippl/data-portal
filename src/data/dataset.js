@@ -1,10 +1,4 @@
-
-
-class Dataset {
-
-  static getDataset() {
-    return {
-      "datasets": [
+const page = [
         {
         "creator_name": "Jessy Kohl",
         "maintainer": "",
@@ -324,7 +318,4 @@ class Dataset {
         "notes": "test description dcatapit api"
       }
       ]
-    }
-  }
-}
-export default Dataset
+export default page;
