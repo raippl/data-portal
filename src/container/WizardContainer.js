@@ -1,5 +1,5 @@
-import React from 'react';
-import WizardForm from './WizardForm'
+import React, { Component } from 'react';
+import WizardForm from '../components/wizard-ingestion/WizardForm'
 
 
 const showResults = values =>
