@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import NewDsForm from './client/app/index.js'
-import DataInputForm from './client/app/data_form.js'
+import NewDsForm from '../components/IngestionForm/index.js'
+import DataInputForm from '../components/IngestionForm/data_form.js'
 
 const data_dcatap = DataInputForm.getDcatap()
 const data_dataschema = DataInputForm.getDataschema()

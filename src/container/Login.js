@@ -1,19 +1,19 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Header from './Header';
+import Header from '../components/Header';
 
 const mapStateToProps = state => ({
   appName: state.appName
 });
 
-class Home extends React.Component {
+class Login extends React.Component {
   render() {
     return (
       <div>
-        <h2>HOME PAGE</h2>
+        <h2>LOGIN PAGE</h2>
       </div>
     );
   }
 }
 
-export default connect(mapStateToProps, () => ({}))(Home);
+export default connect(mapStateToProps, () => ({}))(Login);

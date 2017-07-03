@@ -1,6 +1,5 @@
 import React from 'react';
 import SlimHeader from './SlimHeader'
-import Dataset from '../Dataset';
 import {  opts,listToMegaMenu, Megamenu} from './megamenu'
 
 class MegaHeader extends React.Component {
@@ -80,7 +79,6 @@ class MegaHeader extends React.Component {
 
         </div>
       </header>
-      <Dataset/>
 
       </div>
       <nav className="Megamenu Megamenu--default js-megamenu ">
