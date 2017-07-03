@@ -11,11 +11,7 @@ import Login from './container/Login';
 import IngestionForm from './container/IngestionForm'
 import Dataset from './container/Dataset';
 import DatasetDetail from './components/Dataset/DatasetDetail';
-<<<<<<< HEAD
-import WizardContainer from './components/wizard-ingestion/WizardContainer'
-=======
-import WizardForm from './container/WizardForm'
->>>>>>> 2f5950daae842dc0f8984b9949fd4e1256d7844e
+import WizardContainer from './container/WizardContainer'
 import MegaHeader from './components/MegaHeader/MegaHeader'
 import configureStore from './configureStore'
 
@@ -24,11 +20,7 @@ import thunkMiddleware from 'redux-thunk'
 import { createLogger } from 'redux-logger'
 import rootReducer from './reducers'
 
-<<<<<<< HEAD
-
-=======
 const store = configureStore();
->>>>>>> 2f5950daae842dc0f8984b9949fd4e1256d7844e
 
 ReactDOM.render((
   <Provider store={store}>
